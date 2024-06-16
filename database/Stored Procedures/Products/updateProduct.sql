@@ -1,0 +1,9 @@
+use ProductCategories;
+
+CREATE OR ALTER PROCEDURE updateProduct(@Id VARCHAR(255) , @TITLE VARCHAR(255))
+AS
+BEGIN
+
+
+UPDATE Products SET TITLE=@TITLE WHERE Id= @id
+END

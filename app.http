@@ -1,0 +1,65 @@
+GET http://localhost:4000/products
+
+
+######
+
+POST http://localhost:4000/products
+Content-Type: application/json
+
+{
+    
+    "TITLE":"kiorycg"    
+}
+
+
+######
+DELETE  http://localhost:4000/products/c9f3e433-5db1-499f-92ea-5e0c352f2aa3
+
+######
+PATCH  http://localhost:4000/products/9b4ee6f7-eb3e-4b34-bb69-dfed8256530c
+content-Type: application/json
+
+{
+    "TITLE":"Golf"
+}
+
+
+######
+
+GET  http://localhost:4000/ProductCategory
+
+#####
+POST http://localhost:4000/ProductCategory
+Content-Type: application/json
+
+{
+    
+    "TITLE": "fruits"
+}
+
+
+
+######
+POST  http://localhost:4000/auth/register
+
+Content-Type: application/json
+
+{
+    "Name": "boniface",
+    "Email": "bonik34@gmail.com",
+    "Password": "StrongP@ssw0rd"
+
+}
+
+
+######
+POST http://localhost:4000/auth/login
+
+Content-Type: application/json
+
+{
+
+    "Email":"john34@gmail.com",
+    "Password": "A1b2C3d4!."
+
+}
